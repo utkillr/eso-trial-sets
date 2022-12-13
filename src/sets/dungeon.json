@@ -1,0 +1,14 @@
+{
+  "nirn": {
+    "name": "Root of Nirn",
+    "description": "Set from Folkreath, creates an AoE with initial hit, applies bleeding on target",
+    "type": "Medium",
+    "usage": "Mostly backbar"
+  },
+  "tzogvin": {
+    "name": "Tzogvin's Warband",
+    "description": "Set from Frostvault, gives you <> stacks on each LA, minor force on 10 stacks",
+    "type": "Medium",
+    "usage": "Mostly frontbar. You have to do 10 LA to gain minor force, and also increase your crit damage. Replaces trap/acceleration"
+  }
+}

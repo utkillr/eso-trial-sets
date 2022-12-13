@@ -1,0 +1,62 @@
+{
+  "ra-kotu": {
+    "name": "Ra Kotu",
+    "description": "First boss of HRC. Has Spinning mechanic which should be avoided, and Sword Assault mechanic which is basically ignored",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "rokdun": {
+    "name": "Yokeda Rok’dun",
+    "description": "Lower second boss of HRC. No specific mechanics, just trash",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "kai": {
+    "name": "Yokeda Kai",
+    "description": "Upper second boss of HRC. Needs to be interrupted on cast, and has cloning mechanics - only original one is damaged",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "warrior": {
+    "name": "The Warrior",
+    "description": "Last boss of HRC. Has big Cleave attack. Jump can be dodged. On Storm mechanics group should be unstacked to avoid getting too much damage. HM adds Gargoyls and Fossilize mechanic which can be synergised only and only when there are no teammates around",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  }
+}

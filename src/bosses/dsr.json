@@ -1,0 +1,77 @@
+{
+  "ly_tu": {
+    "name": "Lylanar and Turlassil",
+    "description": "First boss of DSR. Has 3 phases - 1st boss, 2nd boss and both bosses. Boss is only damaged under dome, and he deals less damage under dome. Bosses need to be properly bashed between these phases. HM adds fiery/icy weapons mechanics which require a lot of coordination from group.",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "bow-breaker": {
+    "name": "Bow Breaker",
+    "description": "Mini-boss of DSR. Basically a Haj-Mota with trash-crabs, running around. Perfectly damaged by AoE",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "sail-ripper": {
+    "name": "Sail Ripper",
+    "description": "Mini-Boss of DSR. A Harpy, whose mechanics are just moving to another place and casting Shock AoE which needs to be put into Shock Circle",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "guardian": {
+    "name": "Reef Guardian",
+    "description": "Second boss of DSR. Has mechanic of cloning itself. When copy is coming to the portal, DDs should go down and destroy the reef. HM requires DDs to unstack, and reefs are having more HP so they are impossible to be killed by one DD",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "taleria": {
+    "name": "Tideborn Taleria",
+    "description": "Last boss of DSR. Mechanics are: Whirlwind, Storm (2 storms on HM), Deluge (explosion should happen in water), Behemots, Sirens and Bridges with adds. 2 DDs (3 on HM) should cross the bridge and damage add to 50%. Then the add should be killed on main arena. On vet, with good DPS, bridges can be skipped",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  }
+}

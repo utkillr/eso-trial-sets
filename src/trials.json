@@ -1,0 +1,109 @@
+{
+  "hrc": {
+    "name": "Hel-Ra Citadel",
+    "description": "One of 3 Craglorn Trials, with The Warrior boss fight in the end.",
+    "bosses": [
+      "ra-kotu",
+      "rokdun",
+      "kai",
+      "warrior"
+    ]
+  },
+  "aa": {
+    "name": "Aetherian Archives",
+    "description": "One of 3 Craglorn Trials, with The Mage boss fight in the end.",
+    "bosses": [
+      "storm-atro",
+      "stone-atro",
+      "varlariel",
+      "mage"
+    ]
+  },
+  "so": {
+    "name": "Sanctum Ophidia",
+    "description": "One of 3 Craglorn Trials, with The Serpent boss fight in the end.",
+    "bosses": [
+      "mantikora",
+      "stonebreaker",
+      "ozara",
+      "serpent"
+    ]
+  },
+  "mol": {
+    "name": "Maw of Lorkhaj",
+    "description": "Trial from Thieves guild DLC",
+    "bosses": [
+      "zhajhassa",
+      "vashai-skinrai",
+      "rakkhat"
+    ]
+  },
+  "hof": {
+    "name": "Halls of Fabrication",
+    "description": "Long trial from Morrowind DLC",
+    "bosses": [
+      "hunter-killers",
+      "factotum",
+      "archcustodian",
+      "committee",
+      "general"
+    ]
+  },
+  "as": {
+    "name": "Asylum Sanctorium",
+    "description": "Arena trial with HM of +2 bosses from Clockwork City DLC",
+    "bosses": [
+      "llothis",
+      "felms",
+      "olms"
+    ]
+  },
+  "cr": {
+    "name": "Cloudrest",
+    "description": "Arena trial with HM of +3 bosses from Summerset DLC",
+    "bosses": [
+      "relequen",
+      "siroria",
+      "galenwe",
+      "zmaja"
+    ]
+  },
+  "ss": {
+    "name": "Sunspire",
+    "description": "Trial from Elsweir DLC including 3 fights with Dragon Gods",
+    "bosses": [
+      "yolnahkriin",
+      "lokkestiiz",
+      "nahviintaas"
+    ]
+  },
+  "ka": {
+    "name": "Kyne's Aegis",
+    "description": "Trial from Western Skyrim DLC including hard last boss fight with Vampire Lord Falgravn",
+    "bosses": [
+      "yandir",
+      "vrol",
+      "falgravn"
+    ]
+  },
+  "rg": {
+    "name": "Rockgrove",
+    "description": "Trial from Blackwood DLC with famous hardmode of Bahsei",
+    "bosses": [
+      "oaxiltso",
+      "bahsei",
+      "xalvakka"
+    ]
+  },
+  "dsr": {
+    "name": "Dreadsail Reef",
+    "description": "Trial from High Isle DLC full of mechanics on each boss",
+    "bosses": [
+      "ly_tu",
+      "bow-breaker",
+      "sail-ripper",
+      "guardian",
+      "taleria"
+    ]
+  }
+}

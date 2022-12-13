@@ -1,0 +1,62 @@
+{
+  "storm-atro": {
+    "name": "Lightning Storm Atronach",
+    "description": "First boss of AA. The main and the only mechanic is stacking on one of 4 runes when the storm is being casted",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "stone-atro": {
+    "name": "Foundation Stone Atronach",
+    "description": "Second boss of AA. This boss casts The Quake and boulders. On boulders group should gain distance not to stack damage",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "varlariel": {
+    "name": "Varlariel",
+    "description": "Third boss of AA. This boss copy herself into 4 clones, each one must be killed - DPS check. If heals and DPS are good - can be ignored",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "mage": {
+    "name": "The Celestial Mage",
+    "description": "Last boss of AA. Summons Reflections which should be targeted, Axes which should be taunted. Also spawns Meteors and atronachs on HM. Execute phase is a DPS check",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  }
+}

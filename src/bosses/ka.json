@@ -1,0 +1,47 @@
+{
+  "yandir": {
+    "name": "Yandir the Butcher",
+    "description": "First boss of KA. Damaged alongside with Asprid. Can summon different totems which should be focused. Can jump - this should be blocked. Has cleave attack. On HM fire shamans are summoned. They also should burn in AoE. The more mages summoned - more meteors will fall on group. Meteors should be unstacked and blocked",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "vrol": {
+    "name": "Captain Vrol",
+    "description": "Second boss of KA. Has simple portal mechanic. Summons adds, copies and conduit. Conduit is a high priority target. On execute summons meteors which should be unstacked and blocked. HM adds HP and damage.",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "falgravn": {
+    "name": "Lord Falgravn",
+    "description": "Last boss of KA. Has 3 stages. On 1st stage summons Lieutenant Njordal. Add is killed first, then the boss. Starts lightning mechanic of 90 and 80%. On 70% comes to stage 2, where group needs to unstack, kill prisons, block fountains and not to move on bloody phase. On 30% moves to last stage where he summons torturers. They can't be ignored on HM",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  }
+}

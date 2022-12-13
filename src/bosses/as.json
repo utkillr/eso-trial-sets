@@ -1,0 +1,47 @@
+{
+  "llothis": {
+    "name": "Saint Llothis the Pious",
+    "description": "'Toxic' boss. Main mechanics are Bolts (interrupted), Blast (blocked) and Gas (kited). When dealt with alone, summons imperfections",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "felms": {
+    "name": "Saint Felms the Bold",
+    "description": "'Nightblade' boss. Main mechanics are Manifest (avoided) and Storm (kited). When dealt with alone, summons imperfections",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "olms": {
+    "name": "Saint Olms the Just",
+    "description": "Main boss of AS. Casts Steam on tank, has a kite mechanics (requires to set 8 DD positions). Terminals should be focused. Casts Trial by Fire on execute, which needs to be healed. Can be HM+1 or HM+2 - depends on how many bosses you skip before - they will fight alongside",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  }
+}

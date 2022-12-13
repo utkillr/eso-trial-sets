@@ -1,0 +1,20 @@
+{
+  "kilt": {
+    "name": "Harpooner's Wading Kilt",
+    "description": "",
+    "type": "Relic. Medium legs",
+    "usage": ""
+  },
+  "coil": {
+    "name": "Serpent's Coil",
+    "description": "",
+    "type": "Relic. Necklace",
+    "usage": ""
+  },
+  "mora": {
+    "name": "Mora's Whisper",
+    "description": "",
+    "type": "Relic. Medium shoulder",
+    "usage": ""
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "snake": {
+    "name": "Bask-in-Snakes",
+    "description": "Mini-boss of RG. Just a guy and a snake with trash, burns in AoE damage",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "oaxiltso": {
+    "name": "Oaxiltso",
+    "description": "First boss of RG. Summons Havocrels which should be focused. Has Sludge mechanic which needs to be cleansed and kite mechanic. On HM each pool will be eventually blocked by Havocrel, and kite mechanic is doubled",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "bahsei": {
+    "name": "Flame-Herald Bahsei",
+    "description": "Second boss of RG. Summons atronachs, which should be focused. Has curse mechanics which can be kited. After 50% starts summoning Behemoths and Meteor. Both have to be focused. HM is totally another game with developed mechanic portal which require good gameplay and team coordination",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "ash-titan": {
+    "name": "Ash Titan",
+    "description": "Third mini-boss of RG. Has two adds which should be killed first. Summons meteor which is priority, and has complex kite mechanic",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "xalvakka": {
+    "name": "Xalvakka",
+    "description": "Last boss of RG. Has 3 stages. Parse on first one, cloning on second one and cloning with meteors on third one. Summons strong adds, which are essential to be focused on HM",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  }
+}

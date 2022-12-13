@@ -1,0 +1,38 @@
+{
+  "relequen": {
+    "name": "Arms of Relequen",
+    "description": "Set from Cloudrest, applies <> damaging debuff",
+    "type": "Medium",
+    "usage": "Apply and maintain 10 stacks of winds to get max damage from set"
+  },
+  "yandir": {
+    "name": "Yandir's Might",
+    "description": "Set from Kyne's Aegis, stacks <> buff on you",
+    "type": "Medium",
+    "usage": "Gain and maintain 10 stacks of might ato get max damage. In case you need burst damage - you can heavy-attack to increase damage, but stacks will be lost"
+  },
+  "coral": {
+    "name": "Coral Riptide",
+    "description": "Set from Dreadsail Reef, increases damage as your Stamina falls down",
+    "type": "Medium",
+    "usage": "As soon as your stamina falls, damage is increased. This works up to 33% - so for max damage your stamina should be below 33%"
+  },
+  "depth": {
+    "name": "Whorl of the Depth",
+    "description": "Set from Dreadsail Reef, creates a whorl under the target which gives AoE damage",
+    "type": "Light",
+    "usage": ""
+  },
+  "bahsei": {
+    "name": "Bahsei's Mania",
+    "description": "Set from Rockgrove, increases damage as your Magicka falls down",
+    "type": "Medium",
+    "usage": "As soon as your magicka falls, damage is increased. This works up to 15% - so for max damage your magicka should be below 15%"
+  },
+  "siroria": {
+    "name": "Mantle of Siroria",
+    "description": "Set from Cloudrest, creates an aura around you, where you getting <> stacks",
+    "type": "Light",
+    "usage": "Standing in the aura gives you stacks on LA, so for best performance you have to stay in this aura and maintain 10 stacks"
+  }
+}

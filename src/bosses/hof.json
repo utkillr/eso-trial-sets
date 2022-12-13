@@ -1,0 +1,77 @@
+{
+  "hunter-killers": {
+    "name": "Hunter Killers",
+    "description": "First boss of HoF. Clanfears hould be dealt one by another. If they are close, they are linked, thus enraged. Problem of this fight is poison which needs to be purged and shots which should be dodged",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "factotum": {
+    "name": "Pinnacle Factotum",
+    "description": "Second boss of HoF. Summons Spinner and Steamer. Has army mechanics - 4 shots to be blocked by tank. Has portal mechanic, but it can be skipped with good DPS",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "archcustodian": {
+    "name": "Archcustodian",
+    "description": "Third boss of HoF. Dwemer spider which walks through the corridor and can only be damaged while stunned by circuit. When walks - reflects all the damage",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "committee": {
+    "name": "Reassembly Committee",
+    "description": "Fourth boss of HoF. Three factotums are getting overloaded by sitting together. Tanks have to swap on debuff stacks. Bosses spawn robots which should be focused. With good AoE DPS committee can be stacked the whole fight",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "general": {
+    "name": "Assembly General",
+    "description": "Last boss of HoF. Has two hands mechanics (Saw and Fire), as well as stomps, which should be blocked. Has 4 phases. Between them DDs should kill as much Terminals as possible, but at least 2. Trash is also killed between phases. Execute requires good positioning and good DPS on HM execute",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  }
+}

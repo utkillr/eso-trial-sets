@@ -1,0 +1,62 @@
+{
+  "mantikora": {
+    "name": "Possessed Mantikora",
+    "description": "First boss of SO. This snake will cast Popcorn which should be unstacked by dodge, Black hole which is basically a portal mechanic and Poison circles which is AoE",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "stonebreaker": {
+    "name": "Stonebreaker Troll",
+    "description": "Second boss of SO. This troll will throw stones and stomp, while there'll be adds casting lightning on you. Everything is healed, but lightnings should be unstacked",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "ozara": {
+    "name": "Ozara Lamia",
+    "description": "Third boss of SO. Does not have painful mechanics except for pins - synergy will free your teammate",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "serpent": {
+    "name": "The Serpent",
+    "description": "Last boss of SO. Has plenty of mechanics. Poison should be healed in stack, while other mechanic requires to stack into two different groups. Totems can either pull you from group or put a magicka bomb on you. Don't kill Mantikoras since they'll explode. On execute each player must grab a pink orb around the room. On HM Poison Field mechanics is added",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  }
+}

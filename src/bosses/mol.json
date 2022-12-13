@@ -1,0 +1,47 @@
+{
+  "zhajhassa": {
+    "name": "Zhaj’hassa",
+    "description": "First boss on MoL. Parse dummy with curse mechanic which is cleansed in one of 6 runes. Also can summon totem which throws DDs back. Casts shield which is just damaged through and does an AoE splash, which can be avoided by standing behind the totem",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "vashai-skinrai": {
+    "name": "Vashai and Skinrai",
+    "description": "Second boss of MoL. Two bosses have different aura and only players with another aura can stand nearby. If 2 people with different aura stack, it's a bang, probably a wipe. Phases are: pure fight and praying",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "rakkhat": {
+    "name": "Rakkhat",
+    "description": "Last boss of MoL. Has portal mechanic which can be skipped even on HM with great DPS. Summons big cats which are killed by cleave. Moves from platform to platform. On HM, has a Golden Phase, when all 8 platforms are taken. DPS needs to be cut off for Golden Phase",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  }
+}

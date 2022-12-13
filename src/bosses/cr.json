@@ -1,0 +1,62 @@
+{
+  "relequen": {
+    "name": "Relequen",
+    "description": "Shock boss of Cloudrest. Adds Overload and Shock stun mechanics. When dealt with alone, has a belanaril gryphon fighting alongside",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "siroria": {
+    "name": "Siroria",
+    "description": "Fire boss of Cloudrest. Adds Fire rune stack and Standard mechanics. When dealt with alone, has a Silaeda gryphon fighting alongside ",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "galenwe": {
+    "name": "Galenwe",
+    "description": "Ice boss of Cloudrest. Adds Hoarfrost and Ice Comet mechanics. When dealt with alone, has a Falarielle gryphon fighting alongside",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "zmaja": {
+    "name": "Z'maja",
+    "description": "Main boss of Cloudrest. Has a lot of mechanics: orbs which need to be focused, extended portals with 5-8 crystalls inside, undodgeable Nocturnal Favor, Creepers and Shades (on vet only). HM can be +1, +2 or +3, depending on how many bosses you skipped before. Each boss appears on arena then, and adds his mechanics to the fight.",
+    "tactics": {
+      "dd": {
+        "sets": []
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  }
+}

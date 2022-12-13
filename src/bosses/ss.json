@@ -1,0 +1,108 @@
+{
+  "yolnahkriin": {
+    "name": "Yolnahkriin",
+    "description": "Fire Dragon, whose mechanics are mostly fire atronachs and fiery breath. On HM atronachs need to be pulled under the boss to burn in AoE",
+    "tactics": {
+      "dd": {
+        "sets": [
+          {
+            "id": "kilt",
+            "why": "You don't get direct damage, so you don't lose stacks"
+          },
+          {
+            "id": "relequen",
+            "why": "You don't get direct damage, so you don't lose stacks"
+          },
+          {
+            "id": "depth",
+            "why": "On HM you have to kill atronachs with AoE, so this set is perfect for HM"
+          },
+          {
+            "id": "nirn",
+            "why": "As soon as Dragon does not move, you will always put a bleed and AoE damage is great for HM"
+          }
+        ]
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "lokkestiiz": {
+    "name": "Lokkestiiz",
+    "description": "Ice Dragon,, whose mechanics are ice breath, ice tombs, shock and ice atronachs and shock beam which requires positioning on HM",
+    "tactics": {
+      "dd": {
+        "sets": [
+          {
+            "id": "yandir",
+            "why": "You're constantly in a fight (except for beam phase) - so your stacks will be maxed"
+          },
+          {
+            "id": "depth",
+            "why": "As soon as you have to kill storm atronachs grouped, AoE damage of this set would be great"
+          },
+          {
+            "id": "nirn",
+            "why": "As soon as you have to kill storm atronachs grouped, AoE damage of this set would be great"
+          },
+          {
+            "id": "tzogvin",
+            "why": "Storm atronachs fight is the biggest part of fight. If you don't want to put a trap each time - this set works very well"
+          }
+        ]
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  },
+  "nahviintaas": {
+    "name": "Nahviintaas",
+    "description": "Last boss of SS. Main mechanics are trashpacks, sweep, breath and portals. Portal DDs are on their own and need to kill a mini-boss inside. On the execute phase - meteors. HM adds a slow-walking shielded mini-boss on main arena which can be damaged only short periods of time",
+    "tactics": {
+      "dd": {
+        "sets": [
+          {
+            "id": "yandir",
+            "why": "It's a basic medium set which won't require anything to max stacks"
+          },
+          {
+            "id": "coral",
+            "why": "Nothing stops you from lowering stamina. Just keep it enough for a block on sweep"
+          },
+          {
+            "id": "depth",
+            "why": "Big part of the fight is a trash fight. This set works very nice with stacked packs"
+          },
+          {
+            "id": "nirn",
+            "why": "Boss is either standing or causing trash packs. Both cases are good for this set"
+          },
+          {
+            "id": "tzogvin",
+            "why": "This set might be useful for portal DDs. You have to max out your DPS and find some buffs at the same time, and free slot might be handy"
+          }
+        ],
+        "no_sets": [
+          {
+            "id": "relequen",
+            "why": "You are either fighting trash or in portal. Both cases you block sweep, so it's impossible to keep 10 stacks for a long time."
+          }
+        ]
+      },
+      "tank": {
+        "sets": []
+      },
+      "heal": {
+        "sets": []
+      }
+    }
+  }
+}
