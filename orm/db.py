@@ -21,14 +21,19 @@ class DataBase:
 
     def __init__(self):
         if DataBase.instance:
-            self.trials = DataBase.instance.trials
-            self.sets = DataBase.instance.sets
-            self.bosses = DataBase.instance.bosses
+            raise Exception('Database instance already exists')
         else:
             self.trials = TrialDAL()
             self.sets = SetDAL()
             self.bosses = BossDAL()
             DataBase.instance = self
+
+    @classmethod
+    def get(cls):
+        if DataBase.instance:
+            return DataBase.instance
+        else:
+            return DataBase()
 
     def get_trials_only(self) -> List[TrialModel]:
         return [

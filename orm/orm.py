@@ -4,13 +4,13 @@ from typing import List
 
 class DAL:
     model = ''
-    base = 'src'
-    file = ''
+    src = []
 
     def __init__(self):
-        self.src = f'{self.base}/{self.file}'
-        with open(self.src) as f:
-            self.data = json.loads(f.read())
+        self.data = {}
+        for file in self.src:
+            with open(file) as f:
+                self.data.update(json.loads(f.read()))
 
     def get(self, obj_id: str) -> dict:
         if obj_id not in self.data:

@@ -1,6 +1,7 @@
+from config.config import Config
 from orm.orm import DAL
 
 
 class TrialDAL(DAL):
-    trial = 'trial'
-    file = 'trials.json'
+    model = 'trial'
+    src = Config.get().trials_src

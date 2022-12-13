@@ -1,0 +1,23 @@
+{
+  "trials_src": ["src/trials.json"],
+  "bosses_src": [
+    "src/bosses/aa.json",
+    "src/bosses/hrc.json",
+    "src/bosses/so.json",
+    "src/bosses/mol.json",
+    "src/bosses/hof.json",
+    "src/bosses/as.json",
+    "src/bosses/cr.json",
+    "src/bosses/ss.json",
+    "src/bosses/ka.json",
+    "src/bosses/rg.json",
+    "src/bosses/dsr.json"
+  ],
+  "sets_src": [
+    "src/sets/relic.json",
+    "src/sets/monster.json",
+    "src/sets/dungeon.json",
+    "src/sets/trial.json",
+    "src/sets/craft.json"
+  ]
+}

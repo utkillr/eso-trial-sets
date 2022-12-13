@@ -1,10 +1,11 @@
 import interactions
 
+from config.config import Config
 from orm.db import DataBase
 from view.trial import TrialView, TrialsView
 from view.boss import BossView
 
-bot = interactions.Client('MTA0NjM2MDE3NDA3MzQ4MzMzNA.GuNFxE.e0joIH9MxvuB6Rod4VwHpD5GZFDkmN7pdUBKDk')
+bot = interactions.Client(Config.get().token)
 
 
 def role_option():
@@ -26,9 +27,12 @@ def role_option():
     description='List possible trials',
 )
 async def list_trials(ctx: interactions.CommandContext):
-    db = DataBase()
-    trials = db.get_trials_with_bosses()
-    await ctx.send(TrialsView(trials).string())
+    try:
+        db = DataBase.get()
+        trials = db.get_trials_with_bosses()
+        await ctx.send(TrialsView(trials).string())
+    except Exception as e:
+        await ctx.send(f'Exception: {e}')
 
 
 @bot.command(
@@ -42,16 +46,19 @@ async def list_trials(ctx: interactions.CommandContext):
             required=True,
             choices=[
                 interactions.Choice(name=trial.name, value=trial.id)
-                for trial in DataBase().get_trials_only()
+                for trial in DataBase.get().get_trials_only()
             ]
         ),
         role_option(),
     ]
 )
 async def trial_sets(ctx: interactions.CommandContext, trial: str, role: str):
-    db = DataBase()
-    trial_model = db.get_trial(trial, role)
-    await ctx.send(TrialView(trial_model).string())
+    try:
+        db = DataBase.get()
+        trial_model = db.get_trial(trial, role)
+        await ctx.send(TrialView(trial_model).string())
+    except Exception as e:
+        await ctx.send(f'Exception: {e}')
 
 
 @bot.command(
@@ -65,7 +72,7 @@ async def trial_sets(ctx: interactions.CommandContext, trial: str, role: str):
             required=True,
             choices=[
                 interactions.Choice(name=trial.name, value=trial.id)
-                for trial in DataBase().get_trials_only()
+                for trial in DataBase.get().get_trials_only()
             ]
         ),
         interactions.Option(
@@ -79,18 +86,23 @@ async def trial_sets(ctx: interactions.CommandContext, trial: str, role: str):
     ]
 )
 async def boss_sets(ctx: interactions.CommandContext, trial: str, boss: str, role):
-    db = DataBase()
-    bosses = db.get_trial_bosses(trial)
-    for boss_model in bosses:
-        if boss_model.id == boss:
-            boss_model = db.get_boss(boss, role)
-            return await ctx.send(BossView(boss_model).string())
-    raise ValueError(f'No boss {boss} in trial {trial}')
+    try:
+        db = DataBase.get()
+        bosses = db.get_trial_bosses(trial)
+        for boss_model in bosses:
+            if boss_model.id == boss:
+                boss_model = db.get_boss(boss, role)
+                return await ctx.send(BossView(boss_model).string())
+    except Exception as e:
+        await ctx.send(f'Exception: {e}')
+    else:
+        raise ValueError(f'No boss {boss} in trial {trial}')
 
 
 """
 AUTOCOMPLETE
 """
+
 
 @bot.autocomplete(command='boss-sets', name='boss')
 async def autocomplete_boss_sets_boss(ctx, user_input: str = ''):
@@ -99,7 +111,7 @@ async def autocomplete_boss_sets_boss(ctx, user_input: str = ''):
     if not trial_option:
         return await ctx.populate([])
 
-    bosses = DataBase().get_trial_bosses(trial_id=trial_option.value)
+    bosses = DataBase.get().get_trial_bosses(trial_id=trial_option.value)
     if not bosses:
         return await ctx.populate([])
 
