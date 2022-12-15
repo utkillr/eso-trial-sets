@@ -4,6 +4,7 @@ from config.config import Config
 from orm.db import DataBase
 from view.trial import TrialView, TrialsView
 from view.boss import BossView
+from view.adapter import ViewAdapter
 
 bot = interactions.Client(Config.get().token)
 
@@ -30,7 +31,9 @@ async def list_trials(ctx: interactions.CommandContext):
     try:
         db = DataBase.get()
         trials = db.get_trials_with_bosses()
-        await ctx.send(TrialsView(trials).string())
+        result = TrialsView(trials).string()
+        for message in ViewAdapter(result).adapt():
+            await ctx.send(message)
     except Exception as e:
         await ctx.send(f'Exception: {e}')
 
@@ -56,7 +59,9 @@ async def trial_sets(ctx: interactions.CommandContext, trial: str, role: str):
     try:
         db = DataBase.get()
         trial_model = db.get_trial(trial, role)
-        await ctx.send(TrialView(trial_model).string())
+        result = TrialView(trial_model).string()
+        for message in ViewAdapter(result).adapt():
+            await ctx.send(message)
     except Exception as e:
         await ctx.send(f'Exception: {e}')
 
@@ -92,11 +97,15 @@ async def boss_sets(ctx: interactions.CommandContext, trial: str, boss: str, rol
         for boss_model in bosses:
             if boss_model.id == boss:
                 boss_model = db.get_boss(boss, role)
-                return await ctx.send(BossView(boss_model).string())
+                result = BossView(boss_model).string()
+                for message in ViewAdapter(result).adapt():
+                    await ctx.send(message)
+                return
+        else:
+            raise ValueError(f'No boss {boss} in trial {trial}')
     except Exception as e:
         await ctx.send(f'Exception: {e}')
-    else:
-        raise ValueError(f'No boss {boss} in trial {trial}')
+
 
 
 """

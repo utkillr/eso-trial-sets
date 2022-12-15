@@ -23,7 +23,7 @@ class BossView(View):
         if self.model.description:
             lines.append(f'{self.model.description}')
 
-        no_set_lines = '\n'.join([self._set_advice_string(set) for set in self.model.tactic.no_sets])
+        no_set_lines = '\n\n'.join([self._set_advice_string(set) for set in self.model.tactic.no_sets])
         if no_set_lines:
             lines.append('')
             lines.append('Sets **NOT** to use:')
