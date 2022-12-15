@@ -90,8 +90,10 @@
     "name": "Rockgrove",
     "description": "Trial from Blackwood DLC with famous hardmode of Bahsei",
     "bosses": [
+      "snake",
       "oaxiltso",
       "bahsei",
+      "ash-titan",
       "xalvakka"
     ]
   },

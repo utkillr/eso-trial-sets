@@ -4,7 +4,38 @@
     "description": "First boss of SO. This snake will cast Popcorn which should be unstacked by dodge, Black hole which is basically a portal mechanic and Poison circles which is AoE",
     "tactics": {
       "dd": {
-        "sets": []
+        "sets": [
+          {
+            "id": "kilt",
+            "why": "You don't get any direct damage"
+          },
+          {
+            "id": "relequen",
+            "why": "You always just parse the boss"
+          },
+          {
+            "id": "zaan",
+            "why": "You are close to boss, so you get perfect zaan uptime"
+          },
+          {
+            "id": "nirn",
+            "why": "Good bleeding DoT with small AoE which works just fine on this standing boss"
+          },
+          {
+            "id": "aegis",
+            "why": "It's an equal substitution to nirn"
+          },
+          {
+            "id": "depth",
+            "why": "Slayer + good AoE damage"
+          }
+        ],
+        "no_sets": [
+          {
+            "id": "coil",
+            "why": "You don't get any direct damage except for popcorn phase"
+          }
+        ]
       },
       "tank": {
         "sets": []
@@ -19,7 +50,32 @@
     "description": "Second boss of SO. This troll will throw stones and stomp, while there'll be adds casting lightning on you. Everything is healed, but lightnings should be unstacked",
     "tactics": {
       "dd": {
-        "sets": []
+        "sets": [
+          {
+            "id": "coil",
+            "why": "Your group constantly gets AoE poison damage and sharing it one with other"
+          },
+          {
+            "id": "relequen",
+            "why": "You always just parse the boss"
+          },
+          {
+            "id": "stormfist",
+            "why": "Due to lots of trash, stormfist AoE damage will be good"
+          },
+          {
+            "id": "nirn",
+            "why": "Good bleeding DoT with small AoE which works just fine on this standing boss"
+          },
+          {
+            "id": "aegis",
+            "why": "It's an equal substitution to nirn"
+          },
+          {
+            "id": "depth",
+            "why": "Slayer + good AoE damage"
+          }
+        ]
       },
       "tank": {
         "sets": []
@@ -34,7 +90,32 @@
     "description": "Third boss of SO. Does not have painful mechanics except for pins - synergy will free your teammate",
     "tactics": {
       "dd": {
-        "sets": []
+        "sets": [
+          {
+            "id": "coil",
+            "why": "Your group constantly gets AoE poison damage and sharing it one with other"
+          },
+          {
+            "id": "stormfist",
+            "why": "Due to lots of trash, stormfist AoE damage will be good"
+          },
+          {
+            "id": "relequen",
+            "why": "You always just parse the boss"
+          },
+          {
+            "id": "nirn",
+            "why": "Good bleeding DoT with small AoE which works just fine on this standing boss"
+          },
+          {
+            "id": "aegis",
+            "why": "It's an equal substitution to nirn"
+          },
+          {
+            "id": "depth",
+            "why": "Slayer + good AoE damage"
+          }
+        ]
       },
       "tank": {
         "sets": []
@@ -49,7 +130,32 @@
     "description": "Last boss of SO. Has plenty of mechanics. Poison should be healed in stack, while other mechanic requires to stack into two different groups. Totems can either pull you from group or put a magicka bomb on you. Don't kill Mantikoras since they'll explode. On execute each player must grab a pink orb around the room. On HM Poison Field mechanics is added",
     "tactics": {
       "dd": {
-        "sets": []
+        "sets": [
+          {
+            "id": "kilt",
+            "why": "You don't get any direct damage and always close to the boss"
+          },
+          {
+            "id": "coil",
+            "why": "You get constant damage, but no direct"
+          },
+          {
+            "id": "relequen",
+            "why": "You always just parse the boss"
+          },
+          {
+            "id": "nirn",
+            "why": "Good bleeding DoT with small AoE which works just fine on this standing boss"
+          },
+          {
+            "id": "aegis",
+            "why": "It's an equal substitution to nirn"
+          },
+          {
+            "id": "depth",
+            "why": "Slayer + good AoE damage"
+          }
+        ]
       },
       "tank": {
         "sets": []

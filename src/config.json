@@ -15,6 +15,7 @@
   ],
   "sets_src": [
     "src/sets/relic.json",
+    "src/sets/arena.json",
     "src/sets/monster.json",
     "src/sets/dungeon.json",
     "src/sets/trial.json",

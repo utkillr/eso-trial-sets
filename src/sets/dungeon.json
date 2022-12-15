@@ -1,6 +1,6 @@
 {
   "nirn": {
-    "name": "Root of Nirn",
+    "name": "Pillar of Nirn",
     "description": "Set from Folkreath, creates an AoE with initial hit, applies bleeding on target",
     "type": "Medium",
     "usage": "Mostly backbar"
@@ -10,5 +10,17 @@
     "description": "Set from Frostvault, gives you <> stacks on each LA, minor force on 10 stacks",
     "type": "Medium",
     "usage": "Mostly frontbar. You have to do 10 LA to gain minor force, and also increase your crit damage. Replaces trap/acceleration"
+  },
+  "aegis": {
+    "name": "Aegis Caller",
+    "description": "Set from Unhollowed Grave, lesser aegis dealing AoE damage with spinning blades",
+    "type": "Medium",
+    "usage": "Aegis is called from melee critical damage"
+  },
+  "kinras": {
+    "name": "Kinras's Wrath",
+    "description": "Set from Black Drake Villa, applies Major berserk for you and Minor berserk for your group and you",
+    "type": "Medium",
+    "usage": "Mostly frontbar. After 5 LA Major berserk is gained, stacking 5 Burning Heart stacks"
   }
 }

@@ -1,7 +1,7 @@
 {
   "relequen": {
     "name": "Arms of Relequen",
-    "description": "Set from Cloudrest, applies <> damaging debuff",
+    "description": "Set from Cloudrest, applies Harmful Winds damaging debuff",
     "type": "Medium",
     "usage": "Apply and maintain 10 stacks of winds to get max damage from set"
   },
@@ -31,7 +31,7 @@
   },
   "siroria": {
     "name": "Mantle of Siroria",
-    "description": "Set from Cloudrest, creates an aura around you, where you getting <> stacks",
+    "description": "Set from Cloudrest, creates an aura around you, where you getting Siroria's Boon stacks",
     "type": "Light",
     "usage": "Standing in the aura gives you stacks on LA, so for best performance you have to stay in this aura and maintain 10 stacks"
   }

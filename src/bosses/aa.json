@@ -4,7 +4,34 @@
     "description": "First boss of AA. The main and the only mechanic is stacking on one of 4 runes when the storm is being casted",
     "tactics": {
       "dd": {
-        "sets": []
+        "sets": [
+          {
+            "id": "kilt",
+            "why": "You get no direct damage from this boss, Kilt will work just fine"
+          },
+          {
+            "id": "zaan",
+            "why": "You are close to boss and even when there is a rune stacking phase, you still close enough for Zaan proc"
+          },
+          {
+            "id": "nirn",
+            "why": "Good bleeding DoT with small AoE which works just fine on this standing boss"
+          },
+          {
+            "id": "aegis",
+            "why": "It's an equal substitution to nirn, and Aegis will stay on boss when you're in the rune"
+          },
+          {
+            "id": "depth",
+            "why": "Slayer + good AoE damage"
+          }
+        ],
+        "no_sets": [
+          {
+            "id": "coil",
+            "why": "No damage. And even if you get one, it's hard to stack then"
+          }
+        ]
       },
       "tank": {
         "sets": []
@@ -19,7 +46,38 @@
     "description": "Second boss of AA. This boss casts The Quake and boulders. On boulders group should gain distance not to stack damage",
     "tactics": {
       "dd": {
-        "sets": []
+        "sets": [
+          {
+            "id": "zaan",
+            "why": "You are close to boss and even when there is an unstacking phase, you still close enough for Zaan proc"
+          },
+          {
+            "id": "stormfist",
+            "why": "There is some trash beside the boss, AoE proc might be useful"
+          },
+          {
+            "id": "nirn",
+            "why": "Good bleeding DoT with small AoE which works just fine on this standing boss"
+          },
+          {
+            "id": "aegis",
+            "why": "It's an equal substitution to nirn"
+          },
+          {
+            "id": "depth",
+            "why": "Slayer + good AoE damage"
+          },
+          {
+            "id": "relequen",
+            "why": "You are close to the boss for the whole fight, stacks will work"
+          }
+        ],
+        "no_sets": [
+          {
+            "id": "coil",
+            "why": "Damage received is situational, small chance for proc"
+          }
+        ]
       },
       "tank": {
         "sets": []
@@ -34,7 +92,32 @@
     "description": "Third boss of AA. This boss copy herself into 4 clones, each one must be killed - DPS check. If heals and DPS are good - can be ignored",
     "tactics": {
       "dd": {
-        "sets": []
+        "sets": [
+          {
+            "id": "zaan",
+            "why": "You are close to boss for the whole fight, Zaan will always work"
+          },
+          {
+            "id": "nirn",
+            "why": "Good bleeding DoT with small AoE which works just fine on this standing boss"
+          },
+          {
+            "id": "aegis",
+            "why": "It's an equal substitution to nirn"
+          },
+          {
+            "id": "depth",
+            "why": "Slayer + good AoE damage"
+          },
+          {
+            "id": "relequen",
+            "why": "You are close to the boss for the whole fight, stacks will work"
+          },
+          {
+            "id": "coral",
+            "why": "You don't need stamina for mechanics, feel free to be on 33% or lower"
+          }
+        ]
       },
       "tank": {
         "sets": []
@@ -49,7 +132,38 @@
     "description": "Last boss of AA. Summons Reflections which should be targeted, Axes which should be taunted. Also spawns Meteors and atronachs on HM. Execute phase is a DPS check",
     "tactics": {
       "dd": {
-        "sets": []
+        "sets": [
+          {
+            "id": "stormfist",
+            "why": "There is some trash beside the boss, AoE proc might be useful"
+          },
+          {
+            "id": "nirn",
+            "why": "Good bleeding DoT with small AoE which works just fine on this standing boss"
+          },
+          {
+            "id": "aegis",
+            "why": "It's an equal substitution to nirn"
+          },
+          {
+            "id": "depth",
+            "why": "Slayer + good AoE damage"
+          },
+          {
+            "id": "coil",
+            "why": "You constantly get damage here and basically you don't need to move that much"
+          }
+        ],
+        "no_sets": [
+          {
+            "id": "coral",
+            "why": "You need stamina for execute phase, which will ruin whole parse on Coral"
+          },
+          {
+            "id": "relequen",
+            "why": "Due to constantly changing targets you will not get enough Relequen stacks working all the time"
+          }
+        ]
       },
       "tank": {
         "sets": []

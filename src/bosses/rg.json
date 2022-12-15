@@ -4,7 +4,28 @@
     "description": "Mini-boss of RG. Just a guy and a snake with trash, burns in AoE damage",
     "tactics": {
       "dd": {
-        "sets": []
+        "sets": [
+          {
+            "id": "kilt",
+            "why": "You don't get any direct damage and always close to the boss"
+          },
+          {
+            "id": "relequen",
+            "why": "You always just parse the boss"
+          },
+          {
+            "id": "nirn",
+            "why": "Good bleeding DoT with small AoE which works just fine on this standing boss"
+          },
+          {
+            "id": "aegis",
+            "why": "It's an equal substitution to nirn - will damage both bosses"
+          },
+          {
+            "id": "depth",
+            "why": "Slayer + good AoE damage, there are two bosses and they can be equally damaged in AoE"
+          }
+        ]
       },
       "tank": {
         "sets": []
@@ -19,7 +40,50 @@
     "description": "First boss of RG. Summons Havocrels which should be focused. Has Sludge mechanic which needs to be cleansed and kite mechanic. On HM each pool will be eventually blocked by Havocrel, and kite mechanic is doubled",
     "tactics": {
       "dd": {
-        "sets": []
+        "sets": [
+          {
+            "id": "coil",
+            "why": "You're constantly getting damage"
+          },
+          {
+            "id": "grothdarr",
+            "why": "The only possibly working AoE Monster Set to damage both boss and adds"
+          },
+          {
+            "id": "bahsei",
+            "why": "It increases all of your damage, and since you constantly changing targets, you need something like that"
+          },
+          {
+            "id": "coral",
+            "why": "It increases your SPD/WPD, and since you constantly changing targets, you need something like that"
+          },
+          {
+            "id": "siroria",
+            "why": "It's a great set when you're able to stand in a single place for SPD/WPD increase, and also can be one-barred"
+          },
+          {
+            "id": "tzogvin",
+            "why": "Free slot and constant crit damage with minor Force"
+          },
+          {
+            "id": "maelstrom-bow",
+            "why": "Good AoE damage which works with Barrage morph only"
+          },
+          {
+            "id": "maelstrom-staff",
+            "why": "Good AoE damage, but requires you to move from initial location for correct Wall placement"
+          }
+        ],
+        "no_sets": [
+          {
+            "id": "kilt",
+            "why": "Too much direct damage from frogs spits"
+          },
+          {
+            "id": "relequen",
+            "why": "You swap targets too often"
+          }
+        ]
       },
       "tank": {
         "sets": []
@@ -34,7 +98,58 @@
     "description": "Second boss of RG. Summons atronachs, which should be focused. Has curse mechanics which can be kited. After 50% starts summoning Behemoths and Meteor. Both have to be focused. HM is totally another game with developed mechanic portal which require good gameplay and team coordination",
     "tactics": {
       "dd": {
-        "sets": []
+        "sets": [
+          {
+            "id": "kilt",
+            "why": "Too little amount of direct damage"
+          },
+          {
+            "id": "bahsei",
+            "why": "It increases all of your damage, and since you constantly changing targets, you need something like that"
+          },
+          {
+            "id": "coral",
+            "why": "It increases your SPD/WPD, and since you constantly changing targets, you need something like that"
+          },
+          {
+            "id": "tzogvin",
+            "why": "Free slot and constant crit damage with minor Force"
+          },
+          {
+            "id": "depth",
+            "why": "Works ONLY when you're stacking atronachs and Bahsei"
+          },
+          {
+            "id": "aegis",
+            "why": "Works ONLY when you're stacking atronachs and Bahsei"
+          },
+          {
+            "id": "kinras",
+            "why": "A good stat set, that can be a good substitution to any other set, plus minor Berserk for the group"
+          },
+          {
+            "id": "maelstrom-bow",
+            "why": "Good AoE damage, in case of stack"
+          },
+          {
+            "id": "maelstrom-staff",
+            "why": "Good AoE damage, in case of stack"
+          },
+          {
+            "id": "maelstrom-2h",
+            "why": "Good AoE damage, in case of no stack"
+          }
+        ],
+        "no_sets": [
+          {
+            "id": "relequen",
+            "why": "No constant targets at all"
+          },
+          {
+            "id": "coil",
+            "why": "In good case scenario, you never receive any damage here"
+          }
+        ]
       },
       "tank": {
         "sets": []
@@ -49,7 +164,45 @@
     "description": "Third mini-boss of RG. Has two adds which should be killed first. Summons meteor which is priority, and has complex kite mechanic",
     "tactics": {
       "dd": {
-        "sets": []
+        "sets": [
+          {
+            "id": "coil",
+            "why": "Always getting damage on this boss"
+          },
+          {
+            "id": "stormfist",
+            "why": "AoE damage is good for faster clear of adds"
+          },
+          {
+            "id": "zaan",
+            "why": "You are never too far away from boss, so you will always keep Zaan working"
+          },
+          {
+            "id": "relequen",
+            "why": "You always just parse the boss"
+          },
+          {
+            "id": "nirn",
+            "why": "Good bleeding DoT with small AoE which works just fine on this standing boss"
+          },
+          {
+            "id": "depth",
+            "why": "Slayer + good AoE damage, there are two bosses and they can be equally damaged in AoE"
+          },
+          {
+            "id": "tzogvin",
+            "why": "Spare slot might be useful for kite phase"
+          }
+        ],
+        "no_sets": [
+          {
+            "id": "kilt",
+            "why": "Too much direct damage (first might be from Havocrel and then from kite)"
+          }, {
+            "id": "coral",
+            "why": "You need too much stamina for kite phase to block and sometimes to dodge"
+          }
+        ]
       },
       "tank": {
         "sets": []
@@ -64,7 +217,34 @@
     "description": "Last boss of RG. Has 3 stages. Parse on first one, cloning on second one and cloning with meteors on third one. Summons strong adds, which are essential to be focused on HM",
     "tactics": {
       "dd": {
-        "sets": []
+        "sets": [
+          {
+            "id": "kilt",
+            "why": "With proper work of tanks you don't get any direct damage"
+          },
+          {
+            "id": "zaan",
+            "why": "You are never too far away from boss, so you will always keep Zaan working"
+          },
+          {
+            "id": "depth",
+            "why": "Slayer + good AoE damage, there are two bosses and they can be equally damaged in AoE"
+          },
+          {
+            "id": "bahsei",
+            "why": "It increases all of your damage, and since you constantly changing phases, you need something like that"
+          },
+          {
+            "id": "coral",
+            "why": "It increases your SPD/WPD, and since you constantly changing phases, you need something like that"
+          }
+        ],
+        "no_sets": [
+          {
+            "id": "coil",
+            "why": "Too much movement between phases, coil will slow you down too much"
+          }
+        ]
       },
       "tank": {
         "sets": []
