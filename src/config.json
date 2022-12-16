@@ -20,5 +20,6 @@
     "src/sets/dungeon.json",
     "src/sets/trial.json",
     "src/sets/craft.json"
-  ]
+  ],
+  "help_src": "src/help.txt"
 }

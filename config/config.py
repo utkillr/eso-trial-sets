@@ -12,6 +12,7 @@ class Config:
     bosses_src: List[str]
     trials_src: List[str]
     sets_src: List[str]
+    help_src: str
     token: str
 
     def __init__(self):
@@ -24,6 +25,7 @@ class Config:
         self.bosses_src = config.get('bosses_src', [])
         self.trials_src = config.get('trials_src', [])
         self.sets_src = config.get('sets_src', [])
+        self.help_src = config.get('help_src', [])
         self.token = secret.get('token', '')
         Config.instance = self
 

@@ -12,7 +12,10 @@
       "heal": {
         "sets": []
       }
-    }
+    },
+    "links": [
+      "https://rawr-eso.ru/91-yandir-the-butcher.html"
+    ]
   },
   "vrol": {
     "name": "Captain Vrol",
@@ -27,7 +30,10 @@
       "heal": {
         "sets": []
       }
-    }
+    },
+    "links": [
+      "https://rawr-eso.ru/111-captain_vrol.html"
+    ]
   },
   "falgravn": {
     "name": "Lord Falgravn",

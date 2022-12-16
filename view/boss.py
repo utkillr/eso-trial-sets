@@ -13,6 +13,9 @@ class BossView(View):
         if set_advice.set.description:
             lines.append(f'\t\t{set_advice.set.description}')
 
+        if set_advice.set.link:
+            lines.append(f'\t\t{set_advice.set.link}')
+
         if set_advice.why:
             lines.append(f'\t\t**Why?** *{set_advice.why}*')
 
@@ -22,6 +25,10 @@ class BossView(View):
         lines = [f'__**{self.model.name}**__']
         if self.model.description:
             lines.append(f'{self.model.description}')
+
+        if self.model.links:
+            lines.append('Links:')
+            lines.extend([f'\t{link}' for link in self.model.links])
 
         no_set_lines = '\n\n'.join([self._set_advice_string(set) for set in self.model.tactic.no_sets])
         if no_set_lines:

@@ -24,22 +24,31 @@ def role_option():
 
 
 @bot.command(
-    name='list-trials',
+    name='sets-help',
+    description='Help',
+)
+async def help(ctx: interactions.CommandContext):
+    with open(Config.get().help_src) as f:
+        await ctx.send(f.read())
+
+
+@bot.command(
+    name='sets-trials-all',
     description='List possible trials',
 )
-async def list_trials(ctx: interactions.CommandContext):
+async def trials_all(ctx: interactions.CommandContext):
     try:
         db = DataBase.get()
         trials = db.get_trials_with_bosses()
         result = TrialsView(trials).string()
         for message in ViewAdapter(result).adapt():
-            await ctx.send(message)
+            await ctx.send(message, suppress_embeds=True)
     except Exception as e:
         await ctx.send(f'Exception: {e}')
 
 
 @bot.command(
-    name='trial-sets',
+    name='sets-trial',
     description='Describe working sets for each boss of the trial',
     options=[
         interactions.Option(
@@ -55,19 +64,19 @@ async def list_trials(ctx: interactions.CommandContext):
         role_option(),
     ]
 )
-async def trial_sets(ctx: interactions.CommandContext, trial: str, role: str):
+async def trial(ctx: interactions.CommandContext, trial: str, role: str):
     try:
         db = DataBase.get()
         trial_model = db.get_trial(trial, role)
         result = TrialView(trial_model).string()
         for message in ViewAdapter(result).adapt():
-            await ctx.send(message)
+            await ctx.send(message, suppress_embeds=True)
     except Exception as e:
         await ctx.send(f'Exception: {e}')
 
 
 @bot.command(
-    name='boss-sets',
+    name='sets-boss',
     description='Describe working sets for certain boss of the trial',
     options=[
         interactions.Option(
@@ -90,7 +99,7 @@ async def trial_sets(ctx: interactions.CommandContext, trial: str, role: str):
         role_option(),
     ]
 )
-async def boss_sets(ctx: interactions.CommandContext, trial: str, boss: str, role):
+async def boss(ctx: interactions.CommandContext, trial: str, boss: str, role):
     try:
         db = DataBase.get()
         bosses = db.get_trial_bosses(trial)
@@ -99,7 +108,7 @@ async def boss_sets(ctx: interactions.CommandContext, trial: str, boss: str, rol
                 boss_model = db.get_boss(boss, role)
                 result = BossView(boss_model).string()
                 for message in ViewAdapter(result).adapt():
-                    await ctx.send(message)
+                    await ctx.send(message, suppress_embeds=True)
                 return
         else:
             raise ValueError(f'No boss {boss} in trial {trial}')
@@ -113,8 +122,8 @@ AUTOCOMPLETE
 """
 
 
-@bot.autocomplete(command='boss-sets', name='boss')
-async def autocomplete_boss_sets_boss(ctx, user_input: str = ''):
+@bot.autocomplete(command='sets-boss', name='boss')
+async def autocomplete_boss_boss(ctx, user_input: str = ''):
     options = ctx.data.options
     trial_option = next((option for option in options if option.name == 'trial'), None)
     if not trial_option:

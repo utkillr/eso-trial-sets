@@ -1,0 +1,9 @@
+This is a bot designed for advice players on sets and tactics for different bosses in trials of The Elder Scrolls Online.
+
+As of now, bot supports the following commands:
+- **/sets-help** - print this message
+- **/sets-trials-all** - print list of available Trials
+- **/sets-trial** *<trial>* *<role>* - print info on trial, with bosses and sets for each of them, for particular role
+- **/sets-boss** *<trial>* *<boss>* *<role>* - print advanced info on particular boss, with sets, for particular role
+
+Nowadays bot only supports DD role, Tank and Heal roles are empty yet

@@ -7,6 +7,9 @@
       "rokdun",
       "kai",
       "warrior"
+    ],
+    "links": [
+      "https://alcasthq.com/hel-ra-citadel-guide-for-elder-scrolls-online/"
     ]
   },
   "aa": {
@@ -17,6 +20,9 @@
       "stone-atro",
       "varlariel",
       "mage"
+    ],
+    "links": [
+      "https://alcasthq.com/eso-aetherian-archive-guide/"
     ]
   },
   "so": {
@@ -27,6 +33,9 @@
       "stonebreaker",
       "ozara",
       "serpent"
+    ],
+    "links": [
+      "https://alcasthq.com/eso-sanctum-ophidia-guide/"
     ]
   },
   "mol": {
@@ -36,6 +45,9 @@
       "zhajhassa",
       "vashai-skinrai",
       "rakkhat"
+    ],
+    "links": [
+      "https://alcasthq.com/eso-maw-of-lorkhaj-guide/"
     ]
   },
   "hof": {
@@ -47,6 +59,10 @@
       "archcustodian",
       "committee",
       "general"
+    ],
+    "links": [
+      "https://alcasthq.com/eso-halls-of-fabrication-guide/",
+      "https://rawr-eso.ru/223-hof0.html"
     ]
   },
   "as": {
@@ -56,6 +72,9 @@
       "llothis",
       "felms",
       "olms"
+    ],
+    "links": [
+      "https://alcasthq.com/eso-asylum-sanctorium-guide/"
     ]
   },
   "cr": {
@@ -66,6 +85,9 @@
       "siroria",
       "galenwe",
       "zmaja"
+    ],
+    "links": [
+      "https://alcasthq.com/eso-cloudrest-guide/"
     ]
   },
   "ss": {
@@ -75,6 +97,9 @@
       "yolnahkriin",
       "lokkestiiz",
       "nahviintaas"
+    ],
+    "links": [
+      "https://alcasthq.com/eso-sunspire-trial-guide/"
     ]
   },
   "ka": {
@@ -84,6 +109,10 @@
       "yandir",
       "vrol",
       "falgravn"
+    ],
+    "links": [
+      "https://alcasthq.com/eso-kynes-aegis-trial-guide/",
+      "https://rawr-eso.ru/93-stainless-siege-breaker.html"
     ]
   },
   "rg": {
@@ -95,6 +124,9 @@
       "bahsei",
       "ash-titan",
       "xalvakka"
+    ],
+    "links": [
+      "https://alcasthq.com/eso-rockgrove-trial-guide/"
     ]
   },
   "dsr": {
@@ -106,6 +138,10 @@
       "sail-ripper",
       "guardian",
       "taleria"
+    ],
+    "links": [
+      "https://alcasthq.com/eso-dreadsail-reef-trial-guide/",
+      "https://rawr-eso.ru/213-dsr.html"
     ]
   }
 }

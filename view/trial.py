@@ -32,6 +32,10 @@ class TrialView(View):
         if self.model.description:
             lines.append(f'{self.model.description}')
 
+        if self.model.links:
+            lines.append('Links:')
+            lines.extend([f'\t{link}' for link in self.model.links])
+
         boss_lines = '\n\n'.join([self._boss_string(boss) for boss in self.model.bosses])
         if boss_lines:
             lines.append('Bosses:')
@@ -50,6 +54,10 @@ class TrialsView(View):
         lines = [f'__**{trial.name}**__']
         if trial.description:
             lines.append(f'{trial.description}')
+
+        if trial.links:
+            lines.append('Links:')
+            lines.extend([f'\t{link}' for link in trial.links])
 
         bosses_line = '\n'.join([self._boss_string(boss) for boss in trial.bosses])
         if bosses_line:
