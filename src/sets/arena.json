@@ -3,18 +3,21 @@
     "name": "Thunderous Volley",
     "description": "Bow from Maelstrom Arena, increases damage on every tick of Volley skill",
     "type": "Arena (Bow)",
-    "usage": "Use Volley and reapply on last 2 ticks (for 2-sec cooldown)"
+    "usage": "Use Volley and reapply on last 2 ticks (for 2-sec cooldown)",
+    "link": "https://eso-sets.com/set/perfected-thunderous-volley"
   },
   "maelstrom-staff": {
     "name": "Crushing Wall",
     "description": "Staff set from Maelstrom Arena, increases damage of Wall of Elements",
     "type": "Arena (Destruction Staff)",
-    "usage": "Just use Wall of Elements"
+    "usage": "Just use Wall of Elements",
+    "link": "https://eso-sets.com/set/perfected-crushing-wall"
   },
   "maelstrom-2h": {
     "name": "Merciless Charge",
     "description": "Applies Bleeding DoT on charged target",
     "type": "Arena (Two-Hand Melee)",
-    "usage": "Critical Charge to the target to apply DoT"
+    "usage": "Critical Charge to the target to apply DoT",
+    "link": "https://eso-sets.com/set/perfected-merciless-charge"
   }
 }
