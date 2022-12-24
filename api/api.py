@@ -2,6 +2,7 @@ import interactions
 
 from config.config import Config
 from orm.db import DataBase
+from service.feedback import save_feedback
 from view.trial import TrialView, TrialsView
 from view.boss import BossView
 from view.adapter import ViewAdapter
@@ -115,6 +116,25 @@ async def boss(ctx: interactions.CommandContext, trial: str, boss: str, role):
     except Exception as e:
         await ctx.send(f'Exception: {e}')
 
+
+@bot.command(
+    name='sets-feedback',
+    description='Give some feedback in a freehand',
+    options=[
+        interactions.Option(
+            name='message',
+            description='Message of your feedback',
+            type=interactions.OptionType.STRING,
+            required=True,
+        ),
+    ]
+)
+async def feedback(ctx: interactions.CommandContext, message: str):
+    try:
+        save_feedback(ctx.user.username, message)
+        await ctx.send('Your feedback sent!')
+    except Exception as e:
+        await ctx.send(f'Exception: {e}')
 
 
 """

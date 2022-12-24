@@ -13,6 +13,7 @@ class Config:
     trials_src: List[str]
     sets_src: List[str]
     help_src: str
+    feedback_src: str
     token: str
 
     def __init__(self):
@@ -26,6 +27,7 @@ class Config:
         self.trials_src = config.get('trials_src', [])
         self.sets_src = config.get('sets_src', [])
         self.help_src = config.get('help_src', [])
+        self.feedback_src = config.get('feedback_src', [])
         self.token = secret.get('token', '')
         Config.instance = self
 
