@@ -10,4 +10,6 @@ class TacticModel(Model):
 
     @classmethod
     def from_dict(cls, values):
-        return TacticModel()
+        additional_keys = ['sets', 'no_sets']
+        kwargs = {key: values.get(key) for key in additional_keys if key in values}
+        return TacticModel(**kwargs)

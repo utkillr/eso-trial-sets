@@ -92,7 +92,6 @@ class DataBase:
             self._build_tactic(
                 boss.get('tactics').get(role)
             ).populate() if boss.get('tactics', {}).get(role) else None,
-            role,
         )
 
     def get_trial(self, trial_id: str, role: str) -> TrialModel:

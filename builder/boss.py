@@ -11,7 +11,7 @@ class BossBuilder(Builder):
         super().__init__(values)
         self.boss = BossModel.from_dict(values)
 
-    def set_tactic(self, tactic: TacticModel, role: str):
+    def set_tactic(self, tactic: TacticModel):
         self.boss.tactic = tactic
         return self
 

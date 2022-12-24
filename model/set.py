@@ -19,5 +19,5 @@ class SetModel(Model):
             if key not in values:
                 raise ValueError(f'Unable to init set: {key} is missing')
 
-        args = tuple(values.get(key) for key in required_keys + additional_keys if key in values)
-        return SetModel(*args)
+        kwargs = {key: values.get(key) for key in required_keys + additional_keys if key in values}
+        return SetModel(**kwargs)
