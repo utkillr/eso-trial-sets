@@ -22,5 +22,6 @@
     "src/sets/craft.json"
   ],
   "help_src": "src/help.txt",
-  "feedback_src": "feedback"
+  "feedback_src": "feedback",
+  "suggest_src": "suggest"
 }

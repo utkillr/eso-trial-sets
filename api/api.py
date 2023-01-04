@@ -3,6 +3,7 @@ import interactions
 from config.config import Config
 from orm.db import DataBase
 from service.feedback import save_feedback
+from service.suggest import save_suggest
 from view.trial import TrialView, TrialsView
 from view.boss import BossView
 from view.adapter import ViewAdapter
@@ -21,6 +22,39 @@ def role_option():
             interactions.Choice(name='Tank', value='tank'),
             interactions.Choice(name='Healer', value='heal'),
         ]
+    )
+
+
+def trial_option():
+    return interactions.Option(
+        name='trial',
+        description='Name of the trial',
+        type=interactions.OptionType.STRING,
+        required=True,
+        choices=[
+            interactions.Choice(name=trial.name, value=trial.id)
+            for trial in DataBase.get().get_trials_only()
+        ]
+    )
+
+
+def boss_option():
+    return interactions.Option(
+        name='boss',
+        description='Name of the boss',
+        type=interactions.OptionType.STRING,
+        required=True,
+        autocomplete=True,
+    )
+
+
+def set_option():
+    return interactions.Option(
+        name='set',
+        description='Name of the set',
+        type=interactions.OptionType.STRING,
+        required=True,
+        autocomplete=True,
     )
 
 
@@ -52,16 +86,7 @@ async def trials_all(ctx: interactions.CommandContext):
     name='sets-trial',
     description='Describe working sets for each boss of the trial',
     options=[
-        interactions.Option(
-            name='trial',
-            description='Name of the trial',
-            type=interactions.OptionType.STRING,
-            required=True,
-            choices=[
-                interactions.Choice(name=trial.name, value=trial.id)
-                for trial in DataBase.get().get_trials_only()
-            ]
-        ),
+        trial_option(),
         role_option(),
     ]
 )
@@ -80,27 +105,12 @@ async def trial(ctx: interactions.CommandContext, trial: str, role: str):
     name='sets-boss',
     description='Describe working sets for certain boss of the trial',
     options=[
-        interactions.Option(
-            name='trial',
-            description='Name of the trial',
-            type=interactions.OptionType.STRING,
-            required=True,
-            choices=[
-                interactions.Choice(name=trial.name, value=trial.id)
-                for trial in DataBase.get().get_trials_only()
-            ]
-        ),
-        interactions.Option(
-            name='boss',
-            description='Name of the boss',
-            type=interactions.OptionType.STRING,
-            required=True,
-            autocomplete=True,
-        ),
+        trial_option(),
+        boss_option(),
         role_option(),
     ]
 )
-async def boss(ctx: interactions.CommandContext, trial: str, boss: str, role):
+async def boss(ctx: interactions.CommandContext, trial: str, boss: str, role: str):
     try:
         db = DataBase.get()
         bosses = db.get_trial_bosses(trial)
@@ -137,13 +147,42 @@ async def feedback(ctx: interactions.CommandContext, message: str):
         await ctx.send(f'Exception: {e}')
 
 
+@bot.command(
+    name='sets-suggest',
+    description='Suggest your set for the boss',
+    options=[
+        trial_option(),
+        role_option(),
+        boss_option(),
+        set_option(),
+        interactions.Option(
+            name='why',
+            description='Why is this set useful there?',
+            type=interactions.OptionType.STRING,
+            required=True,
+        ),
+    ]
+)
+async def suggest(ctx: interactions.CommandContext, trial: str, role: str, boss: str, set: str, why: str):
+    try:
+        db = DataBase.get()
+        bosses = db.get_trial_bosses(trial)
+        for boss_model in bosses:
+            if boss_model.id == boss:
+                save_suggest(ctx.user.username, trial, boss, role, set, why)
+                return await ctx.send('Your suggestion sent!')
+        else:
+            raise ValueError(f'No boss {boss} in trial {trial}')
+    except Exception as e:
+        await ctx.send(f'Exception: {e}')
+
+
 """
 AUTOCOMPLETE
 """
 
 
-@bot.autocomplete(command='sets-boss', name='boss')
-async def autocomplete_boss_boss(ctx, user_input: str = ''):
+async def autocomplete_boss(ctx, user_input: str = ''):
     options = ctx.data.options
     trial_option = next((option for option in options if option.name == 'trial'), None)
     if not trial_option:
@@ -160,3 +199,30 @@ async def autocomplete_boss_boss(ctx, user_input: str = ''):
             if user_input.lower() in boss.name
         ]
     )
+
+
+async def autocomplete_set(ctx, user_input: str = ''):
+    sets = DataBase.get().get_sets()
+
+    await ctx.populate(
+        [
+            interactions.Choice(name=set.name, value=set.id)
+            for set in sets
+            if user_input.lower() in set.name.lower()
+        ][:10]
+    )
+
+
+@bot.autocomplete(command='sets-boss', name='boss')
+async def autocomplete_boss_boss(ctx, user_input: str = ''):
+    return await autocomplete_boss(ctx, user_input)
+
+
+@bot.autocomplete(command='sets-suggest', name='boss')
+async def autocomplete_suggest_boss(ctx, user_input: str = ''):
+    return await autocomplete_boss(ctx, user_input)
+
+
+@bot.autocomplete(command='sets-suggest', name='set')
+async def autocomplete_suggest_set(ctx, user_input: str = ''):
+    return await autocomplete_set(ctx, user_input)

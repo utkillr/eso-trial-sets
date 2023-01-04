@@ -129,3 +129,11 @@ class DataBase:
         return SetBuilder(
             set
         ).populate()
+
+    def get_sets(self) -> List[SetModel]:
+        return [
+            SetBuilder(
+                set
+            ).populate()
+            for set in self.sets.get_all()
+        ]
