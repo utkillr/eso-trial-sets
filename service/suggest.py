@@ -5,7 +5,7 @@ from datetime import datetime
 from config.config import Config
 
 
-def save_suggest(user: str, trial: str, boss: str, role: str, set: str, why: str):
+def save_suggest(user: str, trial: str, boss: str, role: str, set: str, use: bool, why: str):
     path = Path(Config.get().suggest_src)
     path.mkdir(parents=True, exist_ok=True)
 
@@ -25,9 +25,13 @@ def save_suggest(user: str, trial: str, boss: str, role: str, set: str, why: str
         suggestion[trial][boss] = {}
 
     if role not in suggestion[trial][boss]:
-        suggestion[trial][boss][role] = []
+        suggestion[trial][boss][role] = {}
 
-    suggestion[trial][boss][role].append(
+    use_keyword = 'sets' if use else 'no_sets'
+    if use_keyword not in suggestion[trial][boss][role]:
+        suggestion[trial][boss][role][use_keyword] = []
+
+    suggestion[trial][boss][role][use_keyword].append(
         {
             'set': set,
             'why': why,

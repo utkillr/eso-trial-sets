@@ -1,114 +1,138 @@
 {
+  "yokeda": {
+    "name": "Berserking Warrior",
+    "description": "Set from Hel-Ra Citadel, increases critical damage on melee damage stacks",
+    "type": "Medium",
+    "usage": "Each melee attack applies Critical Strike increase stack, up to 10 stacks, for 5 seconds. If no stacks are lost, efficiency is 2410 crit strike",
+    "link": "https://eso-sets.com/set/berserking-warrior",
+    "source": "Trial"
+  },
   "alkosh": {
     "name": "Roar of Alkosh",
     "description": "Set from Maw of Lorkhaj, deals damage and reduces resistance on synergy",
     "type": "Medium",
     "usage": "Best on DD, because scales of wpd. Activate a synergy to deal moderate damage and reduce resistance for up to 6000 points",
-    "link": "https://eso-sets.com/set/roar-of-alkosh"
+    "link": "https://eso-sets.com/set/roar-of-alkosh",
+    "source": "Trial"
   },
   "master-architect": {
     "name": "Master Architect",
     "description": "Set from Halls of Fabrication, gives Major Slayer for ultimate spent",
     "type": "Light",
     "usage": "Gain as much ultimate points as possible and use it. Each 10 points give 1 second of Major Slayer",
-    "link": "https://eso-sets.com/set/master-architect"
+    "link": "https://eso-sets.com/set/master-architect",
+    "source": "Trial"
   },
   "war-machine": {
     "name": "War Machine",
     "description": "Set from Halls of Fabrication, gives Major Slayer for ultimate spent",
     "type": "Medium",
     "usage": "Gain as much ultimate points as possible and use it. Each 10 points give 1 second of Major Slayer",
-    "link": "https://eso-sets.com/set/war-machine"
+    "link": "https://eso-sets.com/set/war-machine",
+    "source": "Trial"
   },
   "relequen": {
     "name": "Arms of Relequen",
     "description": "Set from Cloudrest, applies Harmful Winds damaging debuff",
     "type": "Medium",
     "usage": "Apply and maintain 10 stacks of winds to get max damage from set",
-    "link": "https://eso-sets.com/set/perfected-arms-of-relequen"
+    "link": "https://eso-sets.com/set/perfected-arms-of-relequen",
+    "source": "Trial"
   },
   "siroria": {
     "name": "Mantle of Siroria",
     "description": "Set from Cloudrest, creates an aura around you, where you getting Siroria's Boon stacks",
     "type": "Light",
     "usage": "Standing in the aura gives you stacks on LA, so for best performance you have to stay in this aura and maintain 10 stacks",
-    "link": "https://eso-sets.com/set/perfected-mantle-of-siroria"
+    "link": "https://eso-sets.com/set/perfected-mantle-of-siroria",
+    "source": "Trial"
   },
   "olorime": {
     "name": "Vestment of Olorime",
     "description": "Set from Cloudrest, creates an aura around AoE cast, granting your teammates Major Courage for 20 seconds",
     "type": "Light",
     "usage": "Standing in the aura gives your teammates Major Courage. No one have to stay in aura, effect applies and is active for 20 seconds",
-    "link": "https://eso-sets.com/set/vestment-of-olorime"
+    "link": "https://eso-sets.com/set/vestment-of-olorime",
+    "source": "Trial"
   },
   "galenwe": {
     "name": "Aegis of Galenwe",
     "description": "Set from Cloudrest, gives Empower to your allies when you block",
     "type": "Heavy",
     "usage": "When you block, you grant Empower increasing Heavy-attack damage by 80% for your team",
-    "link": "https://eso-sets.com/set/aegis-of-galenwe"
+    "link": "https://eso-sets.com/set/aegis-of-galenwe",
+    "source": "Trial"
   },
   "yandir": {
     "name": "Yandir's Might",
     "description": "Set from Kyne's Aegis, stacks <> buff on you",
     "type": "Medium",
     "usage": "Gain and maintain 10 stacks of might ato get max damage. In case you need burst damage - you can heavy-attack to increase damage, but stacks will be lost",
-    "link": "https://eso-sets.com/set/perfected-yandirs-might"
+    "link": "https://eso-sets.com/set/perfected-yandirs-might",
+    "source": "Trial"
   },
   "bahsei": {
     "name": "Bahsei's Mania",
     "description": "Set from Rockgrove, increases damage as your Magicka falls down",
     "type": "Medium",
     "usage": "As soon as your magicka falls, damage is increased. This works up to 15% - so for max damage your magicka should be below 15%",
-    "link": "https://eso-sets.com/set/perfected-bahseis-mania"
+    "link": "https://eso-sets.com/set/perfected-bahseis-mania",
+    "source": "Trial"
   },
   "sul-xan": {
     "name": "Sul-Xan's Torment",
     "description": "Set from Rockgrove, increases crit chance and crit damage wen touching the soul",
     "type": "Medium",
     "usage": "When an enemy dies, he leaves the soul for 6 seconds. Touch it and you'll be granted Critical Chance and Critical damage increase for 30 seconds",
-    "link": "https://eso-sets.com/set/sul-xans-torment"
+    "link": "https://eso-sets.com/set/sul-xans-torment",
+    "source": "Trial"
   },
   "saxhleel": {
     "name": "Saxhleel Champion",
     "description": "Set from Rockgrove, gives the group Major Force buff on any ultimate usage",
     "type": "Heavy",
     "usage": "Gain as much Ultimate points as possible, then use ultimate. Each 15 points spent give 1 second of Major Force (basically war horn)",
-    "link": "https://eso-sets.com/set/saxhleel-champion"
+    "link": "https://eso-sets.com/set/saxhleel-champion",
+    "source": "Trial"
   },
   "stone-talker": {
     "name": "Stone-Talker's Oath",
     "description": "Set from Rockgrove, restores resources on heavy attack",
     "type": "Light",
     "usage": "Perform a heavy attack to cause a bomb explosion. 5% of damage dealt will be restored as primary resource for each teammate",
-    "link": "https://eso-sets.com/set/perfected-bahseis-mania"
+    "link": "https://eso-sets.com/set/perfected-bahseis-mania",
+    "source": "Trial"
   },
   "coral": {
     "name": "Coral Riptide",
     "description": "Set from Dreadsail Reef, increases damage as your Stamina falls down",
     "type": "Medium",
     "usage": "As soon as your stamina falls, damage is increased. This works up to 33% - so for max damage your stamina should be below 33%",
-    "link": "https://eso-sets.com/set/perfected-coral-riptide"
+    "link": "https://eso-sets.com/set/perfected-coral-riptide",
+    "source": "Trial"
   },
   "depth": {
     "name": "Whorl of the Depth",
     "description": "Set from Dreadsail Reef, creates a whorl under the target which gives AoE Frost damage",
     "type": "Light",
     "usage": "Can be backbarred. Applies DoT after crit damage, then creates an AoE 8 seconds later. Procs every 18 seconds",
-    "link": "https://eso-sets.com/set/perfected-whorl-of-the-depths"
+    "link": "https://eso-sets.com/set/perfected-whorl-of-the-depths",
+    "source": "Trial"
   },
   "pillager": {
     "name": "Pillager's Profit",
     "description": "Set from Dreadsail Reef, restores 5% of ultimate spent for each ally",
     "type": "Light",
     "usage": "Gain as much ultimate points as possible and use it. 5% of points spent will be restored for each ally within 10 seconds",
-    "link": "https://eso-sets.com/set/pillagers-profit"
+    "link": "https://eso-sets.com/set/pillagers-profit",
+    "source": "Trial"
   },
   "pearl": {
     "name": "Pearlescent Ward",
     "description": "Set from Dreadsail Reef, increases spd/wpd for each ally alive, increases damage reduction for each ally dead",
     "type": "Heavy",
     "usage": "Just wear it. When no players die, group gets up to 180 spd/wpd. When people die, damage reduction is increased",
-    "link": "https://eso-sets.com/set/pearlescent-ward"
+    "link": "https://eso-sets.com/set/pearlescent-ward",
+    "source": "Trial"
   }
 }

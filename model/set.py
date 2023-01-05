@@ -2,18 +2,19 @@ from model.model import Model
 
 
 class SetModel(Model):
-    def __init__(self, id, name, type, description, usage, link=None):
+    def __init__(self, id, name, type, description, usage, source, link=None):
         super().__init__()
         self.id = id
         self.name = name
         self.type = type
         self.description = description
         self.usage = usage
+        self.source = source
         self.link = link
 
     @classmethod
     def from_dict(cls, values):
-        required_keys = ['id', 'name', 'type', 'description', 'usage']
+        required_keys = ['id', 'name', 'type', 'description', 'usage', 'source']
         additional_keys = ['link']
         for key in required_keys:
             if key not in values:

@@ -4,8 +4,9 @@ from config.config import Config
 from orm.db import DataBase
 from service.feedback import save_feedback
 from service.suggest import save_suggest
-from view.trial import TrialView, TrialsView
 from view.boss import BossView
+from view.set import SetsView
+from view.trial import TrialView, TrialsView
 from view.adapter import ViewAdapter
 
 bot = interactions.Client(Config.get().token)
@@ -128,6 +129,21 @@ async def boss(ctx: interactions.CommandContext, trial: str, boss: str, role: st
 
 
 @bot.command(
+    name='sets-list',
+    description='List all of the available sets in bot',
+)
+async def sets(ctx: interactions.CommandContext):
+    try:
+        db = DataBase.get()
+        sets = db.get_sets()
+        result = SetsView(sets).string()
+        for message in ViewAdapter(result).adapt():
+            await ctx.send(message, suppress_embeds=True)
+    except Exception as e:
+        await ctx.send(f'Exception: {e}')
+
+
+@bot.command(
     name='sets-feedback',
     description='Give some feedback in a freehand',
     options=[
@@ -156,6 +172,16 @@ async def feedback(ctx: interactions.CommandContext, message: str):
         boss_option(),
         set_option(),
         interactions.Option(
+            name='use',
+            description='Should one use this set there?',
+            type=interactions.OptionType.BOOLEAN,
+            required=True,
+            choices=[
+                interactions.Choice(name='Yes', value=True),
+                interactions.Choice(name='No', value=False),
+            ]
+        ),
+        interactions.Option(
             name='why',
             description='Why is this set useful there?',
             type=interactions.OptionType.STRING,
@@ -163,13 +189,13 @@ async def feedback(ctx: interactions.CommandContext, message: str):
         ),
     ]
 )
-async def suggest(ctx: interactions.CommandContext, trial: str, role: str, boss: str, set: str, why: str):
+async def suggest(ctx: interactions.CommandContext, trial: str, role: str, boss: str, set: str, use: bool, why: str):
     try:
         db = DataBase.get()
         bosses = db.get_trial_bosses(trial)
         for boss_model in bosses:
             if boss_model.id == boss:
-                save_suggest(ctx.user.username, trial, boss, role, set, why)
+                save_suggest(ctx.user.username, trial, boss, role, set, use, why)
                 return await ctx.send('Your suggestion sent!')
         else:
             raise ValueError(f'No boss {boss} in trial {trial}')
@@ -203,12 +229,13 @@ async def autocomplete_boss(ctx, user_input: str = ''):
 
 async def autocomplete_set(ctx, user_input: str = ''):
     sets = DataBase.get().get_sets()
+    substring = user_input.lower()
 
     await ctx.populate(
         [
             interactions.Choice(name=set.name, value=set.id)
             for set in sets
-            if user_input.lower() in set.name.lower()
+            if substring in set.name.lower() or substring in set.id.lower()
         ][:10]
     )
 

@@ -4,20 +4,23 @@
     "description": "Monster Set from Scalecaller Peak. Deals Fiery damage and apply burning to the target within 8 meters through a tethering",
     "type": "Monster Set",
     "usage": "Stay close, do crits",
-    "link": "https://eso-sets.com/set/zaan"
+    "link": "https://eso-sets.com/set/zaan",
+    "source": "Monster Set"
   },
   "stormfist": {
     "name": "Stormfist",
     "description": "Monster Set from Tempest Island. Has a chance to summon a storm fist which deals initial and AoE damage",
     "type": "Monster Set",
     "usage": "Wear it and damage. It has a 10% proc chance",
-    "link": "https://eso-sets.com/set/stormfist"
+    "link": "https://eso-sets.com/set/stormfist",
+    "source": "Monster Set"
   },
   "grothdarr": {
     "name": "Grothdarr",
     "description": "Monster Set from Vaults of Madness. Has a 10% chance to create a Lava AoE underneath you",
     "type": "Monster Set",
     "usage": "Wear it and damage. It has a 10% proc chance",
-    "link": "https://eso-sets.com/set/grothdarr"
+    "link": "https://eso-sets.com/set/grothdarr",
+    "source": "Monster Set"
   }
 }

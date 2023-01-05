@@ -4,13 +4,15 @@
     "description": "Increase critical chance and critical damage by gaining Hunter's Focus stacks",
     "type": "Relic. Medium legs",
     "usage": "You have to avoid direct damage and do direct damage at least once per 20 seconds",
-    "link": "https://eso-sets.com/set/harpooners-wading-kilt"
+    "link": "https://eso-sets.com/set/harpooners-wading-kilt",
+    "source": "Relic"
   },
   "coil": {
     "name": "Sea-Serpent's Coil",
     "description": "Major Berserk and Major Courage after getting damage. 40% damage reduction before that",
     "type": "Relic. Necklace",
     "usage": "Mostly for getting more damage you have to constantly get damage whilst not getting an urge to move fast",
-    "link": "https://eso-sets.com/set/sea-serpents-coil"
+    "link": "https://eso-sets.com/set/sea-serpents-coil",
+    "source": "Relic"
   }
 }
